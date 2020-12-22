@@ -26,7 +26,7 @@ final class MessageWorker
                 ['withscores' => true]
             );
 
-            if ($data != []) {
+            if ($data !== []) {
                 $toRemScoreStack = [];
                 foreach ($data as $message => $timestamp) {
                     fwrite(STDOUT, PHP_EOL . "MESSAGE TIME: $message" . PHP_EOL);
