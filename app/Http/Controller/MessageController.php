@@ -10,7 +10,7 @@ use App\Dto\MessageDto;
 use App\Http\Request\MessageRequest;
 use App\Service\MessagePusherInterface;
 
-class MessageController
+final class MessageController
 {
     /** @var MessageRequest */
     private $request;

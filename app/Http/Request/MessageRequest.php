@@ -9,7 +9,7 @@ use DateTime;
 use Exception;
 use RuntimeException;
 
-class MessageRequest
+final class MessageRequest
 {
     /** @var RequestInterface */
     private $request;

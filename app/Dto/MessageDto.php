@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Dto;
 
-class MessageDto
+final class MessageDto
 {
     private $timestamp;
 

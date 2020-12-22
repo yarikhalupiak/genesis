@@ -6,7 +6,7 @@ namespace App\Service;
 
 use App\Core\Interfaces\RedisInterface;
 
-class MessageWorker
+final class MessageWorker
 {
     /** @var RedisInterface */
     private $redis;
