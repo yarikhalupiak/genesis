@@ -6,7 +6,6 @@ namespace App\Core;
 
 use App\Core\Interfaces\ContainerInterface;
 use App\Core\Interfaces\RedisInterface;
-use App\Core\Interfaces\ResponseInterface;
 use App\Service\MessageWorker;
 
 final class ConsoleKernel
@@ -18,7 +17,7 @@ final class ConsoleKernel
         $this->container = $container;
     }
 
-    public function handle(): ResponseInterface
+    public function handle()
     {
         (new MessageWorker($this->container->get(RedisInterface::class)))->run();
     }
